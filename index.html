@@ -1,51 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PortfolioHUB - André Magalhães</title>
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>André Magalhães — Portfólio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>PortfolioHUB - André Magalhães</h1>
-    <p>Portfólio acadêmico e profissional</p>
-  </header>
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="logo">André<span>.</span>Magalhaes</a>
 
-  <main>
-    <section>
-      <h2>Sobre mim</h2>
-      <p>
-        Sou graduando em Engenharia de Software pelo CEUB, com interesse em desenvolvimento
-        de software, inteligência artificial e aplicações de tecnologia na saúde.
-      </p>
-    </section>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
 
-    <section>
-      <h2>Projetos</h2>
-      <ul>
-        <li>Conversor Binário em C</li>
-        <li>Caixa Eletrônico em C</li>
-        <li>Conversor Binário em Python</li>
-        <li>Caixa Eletrônico em Python</li>
-      </ul>
-    </section>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <a href="curriculo.pdf" class="btn-resume" download>Currículo ↓</a>
+    </nav>
+  </div>
+</header>
 
-    <section>
-      <h2>Currículo Online</h2>
-      <p>Acesse meu currículo criado no Google Sites:</p>
+<main>
 
-      <a class="botao" href="https://sites.google.com/view/curriculoandremagalhaes/in%C3%ADcio" target="_blank">
-        Acessar Currículo Online
+  <section class="hero">
+    <p class="eyebrow">// olá, eu sou</p>
+    <h1>André Magalhães</h1>
+    <p class="subtitle">Estudante de Engenharia de Software, explorando desenvolvimento de software e inteligência artificial.</p>
+    <div class="hero-actions">
+      <a href="#projetos" class="btn-primary">Ver projetos</a>
+      <a href="#contato" class="btn-secondary">Entrar em contato</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2><span class="tag">01.</span> Sobre mim</h2>
+
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <p>
+          Sou estudante de Engenharia de Software no Centro Universitário de Brasília (CEUB),
+          construindo minha base técnica através de estudo constante e projetos práticos em C,
+          Python, Java e desenvolvimento web. Tenho interesse particular em inteligência
+          artificial e em como a tecnologia pode ser aplicada a problemas reais.
+        </p>
+        <p>
+          Atualmente participo de um projeto de iniciação científica, aplicando Machine Learning
+          a dados de saúde pública — um trabalho que une minha curiosidade técnica à vontade de
+          construir soluções com impacto real.
+        </p>
+
+        <div class="skills">
+          <span class="pill">C</span>
+          <span class="pill">Python</span>
+          <span class="pill">Java</span>
+          <span class="pill">SQL</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Figma</span>
+          <span class="pill">Git</span>
+          <span class="pill">GitHub</span>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <p class="research-label">🔬 Iniciação Científica</p>
+        <h3>Modelos Preditivos de Machine Learning para Classificação de Risco em Triagem Hospitalar</h3>
+        <p class="research-sub">Análise Comparativa com Dados do SIH-SUS</p>
+        <p>
+          Etapa atual: revisão bibliográfica sobre machine learning e deep learning.
+          <br>
+          Próximas etapas: modelagem do banco de dados e desenvolvimento do modelo preditivo em Python.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="section">
+    <h2><span class="tag">02.</span> Projetos</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <h3>Sistema de Biblioteca</h3>
+        <p>Cadastro, consulta, empréstimo e devolução de livros, com persistência de dados em
+          arquivo <code>.txt</code> e uso de arquivo temporário para atualização de registros.</p>
+        <div class="tech-tags"><span>C</span></div>
+        <a href="https://github.com/magalhaesandre756/Sistema-de-Biblioteca" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Quiz com Níveis</h3>
+        <p>Quiz de múltipla escolha organizado por níveis, com temporizador por pergunta e banco
+          de perguntas lido de arquivo externo. Projeto em grupo para a disciplina de Lógica de
+          Programação.</p>
+        <div class="tech-tags"><span>C</span></div>
+        <a href="https://github.com/magalhaesandre756/Quiz-com-Niveis" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Exercícios em Java</h3>
+        <p>Prática de pacotes, encapsulamento (getters, setters e construtores) e herança
+          (superclasses e subclasses).</p>
+        <div class="tech-tags"><span>Java</span></div>
+        <a href="https://github.com/magalhaesandre756/Exercicios_em_Java" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Desenvolvimento de Interfaces</h3>
+        <p>Estudos progressivos de HTML: tags básicas, links e tabelas, web semântica e
+          construção de formulários.</p>
+        <div class="tech-tags"><span>HTML</span></div>
+        <a href="https://github.com/magalhaesandre756/Desenvolvimento_de_Interfaces" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Exercícios de Matriz</h3>
+        <p>Manipulação de matrizes em C: diagonal principal, traço, busca de valores, subtração
+          e transposta.</p>
+        <div class="tech-tags"><span>C</span></div>
+        <a href="https://github.com/magalhaesandre756/exercicio_matriz" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Conversor Binário</h3>
+        <p>Conversão de números entre os sistemas decimal e binário, com laços de repetição e
+          validação de entrada.</p>
+        <div class="tech-tags"><span>C</span><span>Python</span></div>
+        <!-- TODO: colar aqui o link do repositório correto -->
+        <a href="#" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Caixa Eletrônico</h3>
+        <p>Simulador de operações bancárias com menu interativo, praticando estruturas
+          condicionais, repetição e funções.</p>
+        <div class="tech-tags"><span>C</span><span>Python</span></div>
+        <!-- TODO: colar aqui o link do repositório correto -->
+        <a href="#" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <h2><span class="tag">03.</span> Contato</h2>
+    <p class="contato-text">
+      Estou em busca da minha primeira oportunidade de estágio em Tecnologia da Informação.
+      Se você quiser conversar, meus contatos estão abaixo.
+    </p>
+
+    <div class="contact-links">
+      <a href="mailto:magalhaesandre756@gmail.com" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <span>E-mail</span>
       </a>
-    </section>
-  </main>
+      <a href="https://www.linkedin.com/in/andreoliveiramagalhaes/" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-icon">in</span>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/magalhaesandre756" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-icon">&lt;/&gt;</span>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </section>
 
-  <footer>
-    <p>Desenvolvido por André Magalhães - 2026</p>
-  </footer>
+</main>
 
+<footer>
+  <p>© <span id="year"></span> André Magalhães — feito com HTML, CSS e bastante prática.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
