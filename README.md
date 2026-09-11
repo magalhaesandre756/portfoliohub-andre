@@ -1,42 +1,33 @@
 # PortfolioHUB - André Magalhães
 
-Este repositório foi desenvolvido como parte da atividade acadêmica de Criação de Repositório com Versionamento.
+Site pessoal de portfólio, desenvolvido com HTML, CSS e JavaScript e 
+publicado via GitHub Pages.
 
-## Objetivo
+## Sobre o site
 
-Organizar projetos acadêmicos e pessoais utilizando Git, GitHub, documentação em Markdown e publicação com GitHub Pages.
+Página única com navegação por seções, apresentando quem sou, os projetos 
+que venho desenvolvendo e meus canais de contato — incluindo download 
+direto do meu currículo atualizado.
 
 ## Estrutura do Repositório
 
-- `index.html`: página principal do PortfolioHUB.
-- `style.css`: arquivo de estilização da página.
-- `projetos-academicos/`: projetos desenvolvidos durante a faculdade.
-- `projetos-pessoais/`: projetos desenvolvidos para estudo e prática.
-- `documentacao/`: materiais de apoio e planejamento.
+- `index.html` — página principal, com as seções Sobre, Projetos e Contato.
+- `style.css` — estilização da página (tema escuro).
+- `script.js` — interações da página: menu responsivo para celular e 
+  atualização automática do ano no rodapé.
+- `curriculo.pdf` — currículo atualizado, disponível para download 
+  direto pelo site.
 
-## Projetos
+## Seções
 
-- Conversor Binário em C
-- Caixa Eletrônico em C
-- Conversor Binário em Python
-- Caixa Eletrônico em Python
+- **Sobre** — apresentação pessoal, principais habilidades técnicas e 
+  destaque do meu projeto de iniciação científica (PIC) em Machine 
+  Learning aplicado a dados de saúde.
+- **Projetos** — cards com os projetos que venho desenvolvendo (C, 
+  Python, Java, HTML), cada um linkado para o respectivo repositório 
+  no GitHub.
+- **Contato** — links diretos para e-mail, LinkedIn e GitHub.
 
-## Links
+## Tecnologias
 
-- GitHub Pages: https://magalhaesandre756-alt.github.io/portfoliohub-andre/
-- Currículo Online: https://sites.google.com/view/curriculoandremagalhaes/in%C3%ADcio
-- LinkedIn: https://www.linkedin.com/in/andr%C3%A9-de-oliveira-magalh%C3%A3es-297a203a6/
-
-## Tecnologias Utilizadas
-
-- HTML
-- CSS
-- Git
-- GitHub
-- GitHub Pages
-- Markdown
-
-## Autor
-
-André de Oliveira Magalhães  
-Graduando em Engenharia de Software - CEUB
+HTML, CSS, JavaScript
